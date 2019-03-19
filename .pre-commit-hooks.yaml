@@ -20,11 +20,11 @@
   entry: bin/foodcritic-wrapper.rb
   language: script
   pass_filenames: true
-  types: ['file']
+  types: ['ruby']
   files: >
     (?x)^(
-        .*/(recipes|attributes|resources|providers)/.*\.rb|
-        .*/metadata\.rb
+        (.*/)?(recipes|attributes|resources|providers)/.*\.rb|
+        (.*/)?metadata\.rb
     )$
   exclude: .*/test/.*\.rb$
   verbose: true
