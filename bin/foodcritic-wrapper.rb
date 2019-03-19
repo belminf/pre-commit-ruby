@@ -10,6 +10,4 @@ exit(true) if ARGV.empty?
 system('bundle install >/dev/null') || exit(false)
 
 # Remove duplicates and run rspec in alphabetical order against directories
-puts "=========== Running foodcritic on #{ARGV.join(' ')}"
-
 system("bundle exec foodcritic #{ARGV.join(' ')}") || exit(false)

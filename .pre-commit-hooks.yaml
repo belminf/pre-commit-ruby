@@ -27,5 +27,7 @@
         (.*/)?metadata\.rb
     )$
   exclude: .*/test/.*\.rb$
+  args:
+    - --epic-fail any
   verbose: true
   require_serial: true
