@@ -28,3 +28,4 @@
     )$
   exclude: .*/test/.*\.rb$
   verbose: true
+  require_serial: true
